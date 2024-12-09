@@ -1,17 +1,16 @@
 package lesson_4;
 
-import java.lang.module.FindException;
 import java.util.Scanner;
 
 public class HWlesson4 {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //task1();
-        //task2();
-        //task3();
-        //task4();
-        //task5();
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
         task6();
     }
 
@@ -157,8 +156,8 @@ public class HWlesson4 {
 
         int count = 0;
 
-        for (int i = 0; i < massiv.length; i++){
-            if(massiv[i] == 0) {
+        for (int j : massiv) {
+            if (j == 0) {
                 count++;
             }
         }
