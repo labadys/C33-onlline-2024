@@ -9,7 +9,7 @@ public class HWlesson5 {
         task1_1();
         task1_2();
         task1_3();
-        task4();
+        task2();
     }
 
     public static void task1_1 () {
@@ -121,7 +121,7 @@ public class HWlesson5 {
         System.out.print("The sum of the values of the entire array " + sum);
     }
 
-    public static void task4() {
+    public static void task2() {
         String[][] board = new String[8][8];
 
         for (int a = 0; a < board.length; a++) {
