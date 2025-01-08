@@ -10,7 +10,7 @@ public class CreditCard {
     }
 
     public void deposit(double amount) {
-        if (amount > 0) {
+        if (amount < 0) {
             balance += amount;
             System.out.println("To the account " + accountNumber + " сredited " + amount + "BYN");
         } else {
