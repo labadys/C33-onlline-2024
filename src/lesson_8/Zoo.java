@@ -2,26 +2,6 @@ package lesson_8;
 
 import java.util.Scanner;
 
-//public class Zoo {
-//    public static void main(String[] args) {
-//
-//        Animal dog = new Dog();
-//        Animal tiger = new Tiger();
-//        Animal rabbit = new Rabbit();
-//
-//        dog.voice();
-//        tiger.voice();
-//        rabbit.voice();
-//
-//        System.out.println();
-//
-//        dog.eat("Meat");
-//        tiger.eat("Grass");
-//        rabbit.eat("Grass");
-//        rabbit.eat("Meat");
-//    }
-//}
-// Дополнительно видоизменил условие чтобы можно было задавать вопросы
 public class Zoo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -29,7 +9,6 @@ public class Zoo {
         Animal dog = new Dog();
         Animal tiger = new Tiger();
         Animal rabbit = new Rabbit();
-
 
         Animal[] animals = {dog, tiger, rabbit};
 
