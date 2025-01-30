@@ -1,7 +1,5 @@
 package lesson_13;
 
-import javax.swing.*;
-
 public class UserValidator {
 
     private static final String RESET = "\u001B[0m";

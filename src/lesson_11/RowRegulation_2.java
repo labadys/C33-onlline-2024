@@ -1,6 +1,7 @@
 package lesson_11;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class RowRegulation_2 {
@@ -18,7 +19,7 @@ public class RowRegulation_2 {
 
         String[] strs = {str1, str2, str3};
 
-        Arrays.sort(strs, (a, b) -> Integer.compare(a.length(), b.length()));
+        Arrays.sort(strs, Comparator.comparingInt(String::length));
 
         System.out.println("Строки по возрастанию длины:");
         for (String str : strs) {

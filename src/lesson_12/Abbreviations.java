@@ -1,5 +1,5 @@
 package lesson_12;
-//Написать длинный тест с абриавитуарми на инг
+//Написать длинный тест с абр
 import java.util.Scanner;
 
 public class Abbreviations {

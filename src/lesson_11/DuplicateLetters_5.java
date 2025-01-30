@@ -14,6 +14,6 @@ public class DuplicateLetters_5 {
             result.append(c).append(c);
         }
 
-        System.out.println("Результат: " + result.toString());
+        System.out.println("Результат: " + result);
     }
 }
