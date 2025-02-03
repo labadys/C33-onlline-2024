@@ -1,7 +1,8 @@
 package lesson_11;
 
 import java.util.Scanner;
-import java.util.HashSet;
+
+import static lesson_11.HasUniqueCharsClass.hasUniqueChars;
 
 public class UniqueSymbols_4 {
     public static void main(String[] args) {
@@ -18,23 +19,11 @@ public class UniqueSymbols_4 {
 
         String[] strs = {str1, str2, str3};
 
-
         for (String str : strs) {
             if (hasUniqueChars(str)) {
                 System.out.println("Слово с уникальными символами: " + str);
                 break;
             }
         }
-    }
-
-
-    public static boolean hasUniqueChars(String str) {
-        HashSet<Character> set = new HashSet<>();
-        for (char c : str.toCharArray()) {
-            if (!set.add(c)) {
-                return false;
-            }
-        }
-        return true;
     }
 }

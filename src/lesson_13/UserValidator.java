@@ -12,6 +12,7 @@ public class UserValidator {
             if (login.length() >= 20) {
                 throw new WrongLoginException("Ошибка: логин должен быть меньше 20 символов.");
             }
+
             if (login.contains(" ")) {
                 throw new WrongLoginException("Ошибка: логин не должен содержать пробелы.");
             }
@@ -19,17 +20,20 @@ public class UserValidator {
             if (password.length() >= 20) {
                 throw new WrongPasswordException("Ошибка: пароль должен быть меньше 20 символов.");
             }
+
             if (password.contains(" ")) {
                 throw new WrongPasswordException("Ошибка: пароль не должен содержать пробелы.");
             }
 
             boolean hasDigit = false;
+
             for (int i = 0; i < password.length(); i++) {
                 if (Character.isDigit(password.charAt(i))) {
                     hasDigit = true;
                     break;
                 }
             }
+
             if (!hasDigit) {
                 throw new WrongPasswordException("Ошибка: пароль должен содержать хотя бы одну цифру.");
             }
@@ -45,15 +49,8 @@ public class UserValidator {
             System.out.println(RED + e.getMessage() + RESET);
             return false;
         }
-    }
-
-    public static void main(String[] args) {
-
-        String login = "UserTest";
-        String password = "password1";
-        String confirmPassword = "password1";
-
-        boolean result = validateCredentials(login, password, confirmPassword);
-        System.out.println("Результат проверки: " + result);
+        finally {
+            System.out.println("test");
+        }
     }
 }
