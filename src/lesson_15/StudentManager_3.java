@@ -12,17 +12,17 @@ public class StudentManager_3 {
         while (iterator.hasNext()) {
             Student_3 student = iterator.next();
             if (student.getAverageGrade() < 3) {
-                System.out.println("\u001B[31m"+"Студент " + student.getName() + " отчислен(а) из-за низкого среднего балла.");
+                System.out.println(RED +"Студент " + student.getName() + " отчислен(а) из-за низкого среднего балла.");
                 iterator.remove();
             } else {
                 student.nextCourse();
-                System.out.println("\u001B[32m" + "Студент " + student.getName() + " переведён(а) на курс " + student.getCourse() + ".");
+                System.out.println(GREEN + "Студент " + student.getName() + " переведён(а) на курс " + student.getCourse() + ".");
             }
         }
     }
 
     public static void printStudents(List<Student_3> students, int course) {
-        System.out.println(RESET + "Студенты на " + course + " курсе:" + "\u001B[32m");
+        System.out.println(RESET + "Студенты на " + course + " курсе:" + GREEN);
         students.stream()
                 .filter(student -> student.getCourse() == course)
                 .forEach(student -> System.out.println(student.getName()));
