@@ -8,7 +8,7 @@ public class HundredYearsOld_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите вашу дату рождения (формат: ГГГГ-ММ-ДД):");
+        System.out.println("Введите вашу дату рождения (формат: ГГГГ-ММ-ДД): ");
         String inputDate = scanner.nextLine();
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -17,6 +17,6 @@ public class HundredYearsOld_1 {
 
         LocalDate hundredYearsLater = birthDate.plusYears(100);
 
-        System.out.println("Вам исполнится 100 лет: " + hundredYearsLater);
+        System.out.print("Вам исполнится 100 лет: " + hundredYearsLater);
     }
 }

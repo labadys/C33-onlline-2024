@@ -10,12 +10,12 @@ public class CurrencyConverter_3 {
         System.out.print("Введите сумму в BYN: ");
         String input = scanner.nextLine();
 
-        double exchangeRate = 0.32674;
+        double exchangeRate = 3.2674;
 
         Function<String, Double> convertToUSD = str -> {
             String[] parts = str.split(" ");
             double amountBYN = Double.parseDouble(parts[0]);
-            return amountBYN * exchangeRate;
+            return amountBYN / exchangeRate;
         };
 
         double amountUSD = convertToUSD.apply(input);

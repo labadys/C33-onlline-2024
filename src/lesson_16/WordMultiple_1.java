@@ -24,7 +24,7 @@ public class WordMultiple_1 {
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Введите буквы через пробел:");
-        String input = scanner.nextLine();
+        String input = scanner.nextLine().trim();
 
         String[] words = input.split("\\s+");
 
